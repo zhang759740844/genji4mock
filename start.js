@@ -3,11 +3,16 @@ const fs = require('fs-extra')
 const path = require('./path')
 const chalk = require('chalk')
 
-
-
-async function readConfig () {
-  const buffer = await fs.readFile('./config.json')
-  return JSON.parse(buffer.toString())
+function getHost () {
+  const net = require('os').networkInterfaces()
+  let address = ''
+  for (const key in net) {
+    const netItemArr = net[key].filter(alias => (alias.family === 'IPv4' && alias.address !== '127.0.0.1' && !alias.internal))
+    if (netItemArr.length !== 0) {
+      address = netItemArr[0].address
+    }
+  }
+  return address
 }
 
 async function writeHost (hostJSString) {
@@ -38,13 +43,12 @@ function prepareKoa () {
 }
 
 async function main () {
-  const config = await readConfig()
-  const host = config.host
+  const host = 'http://' + getHost() + ':3010'
   const hostJSString = `export default { host: '${host}' }`
   await writeHost(hostJSString)
   console.log(chalk.blue('写入 Host 成功'))
-  prepareReact()
-  prepareKoa()
+  // prepareReact()
+  // prepareKoa()
 }
 
 main()
