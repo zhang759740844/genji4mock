@@ -1,2 +1,7 @@
 # geiji4mock
-this is a repo for mock more easily
+
+---
+
+## 目的
+
+本 repo 是为了解决前端 Mock 数据的时候

@@ -1,5 +1,6 @@
+import host from './host'
 export default {
-  host: 'http://localhost:3010',
+  ...host,
   userUrl: {
     register: '/user/register',
     login: '/user/login',

@@ -1,0 +1,29 @@
+{
+  "name": "genji4mock",
+  "version": "1.0.0",
+  "description": "this is a repo for mocking easily",
+  "main": "start.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node start.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhang759740844/geiji4mock.git"
+  },
+  "keywords": [
+    "mock",
+    "koa",
+    "react"
+  ],
+  "author": "zachary",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zhang759740844/geiji4mock/issues"
+  },
+  "homepage": "https://github.com/zhang759740844/geiji4mock#readme",
+  "dependencies": {
+    "fs-extra": "^8.0.1",
+    "shelljs": "^0.8.3"
+  }
+}
