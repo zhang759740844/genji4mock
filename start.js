@@ -47,8 +47,8 @@ async function main () {
   const hostJSString = `export default { host: '${host}' }`
   await writeHost(hostJSString)
   console.log(chalk.blue('写入 Host 成功'))
-  // prepareReact()
-  // prepareKoa()
+  prepareReact()
+  prepareKoa()
 }
 
 main()
