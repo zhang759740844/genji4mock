@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/zhang759740844/geiji4mock#readme",
   "dependencies": {
+    "chalk": "^2.4.2",
     "fs-extra": "^8.0.1",
     "shelljs": "^0.8.3"
   }
