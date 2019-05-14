@@ -1,0 +1,36 @@
+{
+  "name": "genji4mock",
+  "version": "0.0.2",
+  "description": "this is a dependency to mock easily",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js",
+    "pro": ""
+  },
+  "keywords": [
+    "mock",
+    "nodejs",
+    "koa"
+  ],
+  "author": "zachary",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^7.0.1",
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-cors": "0.0.16",
+    "koa-router": "^7.4.0",
+    "koa-session": "^5.10.1",
+    "koa-static": "^5.0.0",
+    "lodash": "^4.17.11",
+    "mysql": "^2.17.1",
+    "nodemon": "^1.18.11",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4"
+  },
+  "devDependencies": {},
+  "bin": {
+    "genji-mock": "./bin/genji-mock"
+  }
+}
