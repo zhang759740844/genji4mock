@@ -260,6 +260,7 @@ class MainPage extends React.Component {
             interface_name: '',
             mock_data: ''
           },
+          addingMock: false,
           searchString: '',
           searching: false
         })
@@ -415,7 +416,7 @@ class MainPage extends React.Component {
             }
 
             <Content style={{
-              background: '#fff', padding: 24, margin: 0, minHeight: 500
+              background: '#fff', padding: 24, margin: 0, minHeight: 500, height: 1
             }} >
               <DataContainer>
                 <Button className='format' onClick={() => { this.formatJSON() }}>格式化</Button>

@@ -17,12 +17,14 @@ export const LogoContainer = styled.div`
 `
 
 export const SiderContainer = styled.div`
+  overflow: auto;
   height: calc(100vh - 64px - 30px);
   display: flex;
   flex-direction: column;
   padding: 10px;
   .bottom {
     height: 30px;
+    background: white;
     border-top: 1px solid lightgray;
     position: absolute;
     bottom: 0;
