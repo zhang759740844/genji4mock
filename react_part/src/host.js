@@ -1,1 +1,1 @@
-export default { host: 'http://10.26.5.252:3010' }
+export default { host: 'http://10.26.5.145:3010' }
